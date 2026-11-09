@@ -1,4 +1,5 @@
 # FluoroBlot Analyzer
+**Current release: [v1.0.0](https://github.com/waiwaihe/FluoroBlot-Analyzer/releases/tag/v1.0.0)**
 
 FluoroBlot Analyzer is a standalone Windows application that integrates four commonly used biomedical image-analysis workflows:
 
@@ -52,7 +53,7 @@ The executable is larger than GitHub's normal 100 MB file limit and should there
 
 ## Running the Windows application
 
-1. Download `WBConfocal_OilRed_BODIPY_Analyzer_English.exe` from Releases.
+1. Download `FluoroBlot-Analyzer-v1.0.0-Windows-x64.exe` from Releases.
 2. Double-click the file to start the application.
 3. Select an analysis mode from the top of the window.
 4. Import one or more supported images.
@@ -77,7 +78,7 @@ python -m pip install --upgrade numpy "Pillow>=12"
 Run the application:
 
 ```bash
-python WBConfocal_OilRed_BODIPY_Analyzer_English.py
+python python FluoroBlot_Analyzer.py
 ```
 
 ## Building the executable
@@ -91,7 +92,7 @@ python -m pip install --upgrade pyinstaller
 Build a single-file Windows executable:
 
 ```bash
-python -m PyInstaller --noconfirm --clean --onefile --windowed --name WBConfocal_OilRed_BODIPY_Analyzer_English WBConfocal_OilRed_BODIPY_Analyzer_English.py
+python -m PyInstaller --noconfirm --clean --onefile --windowed --name FluoroBlot-Analyzer FluoroBlot_Analyzer.py
 ```
 
 ## Recommended analysis practice
